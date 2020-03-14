@@ -7,7 +7,7 @@ class TelegramAPI {
     }
 
     async initHook(callbackURL) {
-        return await this.client.get(this.endpoint + '/setWebhook', {
+        return await this.client.post(this.endpoint + '/setWebhook', {
             url: callbackURL,
         });
     }
@@ -17,7 +17,7 @@ class TelegramAPI {
             message = message.join('\n');
         }
 
-        this.client.get(this.endpoint + '/sendMessage', {
+        this.client.post(this.endpoint + '/sendMessage', {
             chat_id: telegram_id,
             text: message,
         });
