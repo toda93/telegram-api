@@ -1,6 +1,6 @@
 {
     "name": "@azteam/telegram-api",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "",
     "main": "src/index.js",
     "repository": {
@@ -24,6 +24,6 @@
     },
     "homepage": "https://github.com/toda93/telegram-api#readme",
     "dependencies": {
-        "@azteam/http-client": "1.0.12"
+        "@azteam/http-client": "1.0.13"
     }
 }
