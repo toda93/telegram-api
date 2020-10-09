@@ -17,11 +17,10 @@ class TelegramAPI {
             message = message.join('\n');
         }
 
-        this.client.post(this.endpoint + '/sendMessage', {
+        return this.client.post(this.endpoint + '/sendMessage', {
             chat_id: telegram_id,
             text: message,
         });
-        return null;
     }
 }
 
